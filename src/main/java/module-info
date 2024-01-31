@@ -1,0 +1,10 @@
+//module com.fairingstudio.jtunes {
+//    requires javafx.controls;
+//    requires javafx.fxml;
+//    requires com.jfoenix;
+//
+//
+//
+//    opens com.fairingstudio.jtunes to javafx.fxml;
+//    exports com.fairingstudio.jtunes;
+//}
