@@ -1,11 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <JFXToolbar prefHeight="-Infinity" prefWidth="45.0" style="-fx-background-color: #73dfff;" BorderPane.alignment="BOTTOM_LEFT">
+         <bottom>
+            <StackPane alignment="CENTER">
+            <JFXButton prefHeight="45.0" prefWidth="45.0" text="" textFill="#1e223a">
+               <VBox.margin>
+                  <Insets left="2.5" right="2.5" top="2.5" />
+               </VBox.margin>
+
+            </JFXButton>
+            <FontIcon iconLiteral="fas-cog" iconSize="20" styleClass="icon" />
+            </StackPane>
+         </bottom>
+         <top>
+            <VBox prefWidth="45.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXRippler maskType="CIRCLE" style="-fx-ripple-color:WHITE;">
+                  <StackPane fx:id="titleBurgerContainer">
+                  <JFXHamburger fx:id="menu_ham">
+                     <HamburgerBackArrowBasicTransition />
+                           <StackPane.margin>
+                              <Insets left="2.5" right="2.5" />
+                           </StackPane.margin>
+                           <padding>
+                              <Insets bottom="13.0" top="13.0" />
+                           </padding>
+                  </JFXHamburger>
+                  </StackPane>
+                  </JFXRippler>
+                  <JFXToggleNode prefHeight="40.0" prefWidth="40.0" selected="true" text="" textFill="#1e223a">
+                     <VBox.margin>
+                        <Insets left="2.5" right="2.5" top="2.5" />
+                     </VBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup" />
+                     </toggleGroup>
+                     <FontIcon iconLiteral="fas-cash-register" iconSize="20" styleClass="icon" />
+                  </JFXToggleNode>
+                  <JFXToggleNode prefHeight="40.0" prefWidth="40.0" selected="false" text="" textFill="#1e223a" toggleGroup="$toggleGroup">
+
+                     <VBox.margin>
+                        <Insets left="2.5" right="2.5" top="2.5" />
+                     </VBox.margin>
+                     <FontIcon iconLiteral="fas-database" iconSize="20" styleClass="icon" />
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="55.0" prefHeight="75.0" prefWidth="114.0" />
-   </children>
-</AnchorPane>
+                  </JFXToggleNode>
+
+                  <JFXToggleNode prefHeight="40.0" prefWidth="40.0" selected="false" text="" textFill="#1e223a" toggleGroup="$toggleGroup">
+                     <VBox.margin>
+                        <Insets left="2.5" right="2.5" top="2.5" />
+                     </VBox.margin>
+                     <FontIcon iconLiteral="fas-briefcase" iconSize="20" styleClass="icon" />
+                  </JFXToggleNode>
+
+               </children>
+            </VBox>
+         </top>
+      </JFXToolbar>
+   </left>
+   <center>
+      <AnchorPane prefHeight="415.0" prefWidth="619.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="180.0" prefHeight="49.0" prefWidth="114.0" text="3123" />
+            <JFXCheckBox layoutX="240.0" layoutY="40.0" />
+            <JFXRadioButton layoutX="241.0" layoutY="71.0">
+               <selectedColor>
+                  <Color red="0.23529411852359772" green="0.572549045085907" blue="0.9098039269447327" />
+               </selectedColor></JFXRadioButton>
+            <JFXToggleButton layoutX="74.0" layoutY="314.0" />
+            <JFXToggleButton layoutX="74.0" layoutY="256.0" />
+            <JFXToggleNode layoutX="93.0" layoutY="172.0" prefHeight="49.0" prefWidth="130.0" text="原神" />
+            <JFXComboBox layoutX="253.0" layoutY="115.0" />
+
+
+
+            <Label fx:id="label1" layoutX="149.0" layoutY="98.0" prefHeight="58.0" prefWidth="161.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
