@@ -3,20 +3,23 @@
     <output-path>$PROJECT_DIR$/out/artifacts/JTunes_jar</output-path>
     <root id="archive" name="JTunes.jar">
       <element id="module-output" name="JTunes" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-win.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/core/8.0.7/core-8.0.7.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/datafx/8.0.7/datafx-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/com/jfoenix/jfoenix/9.0.10/jfoenix-9.0.10.jar" path-in-jar="/" />
       <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-win.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/flow/8.0.7/flow-8.0.7.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-win.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-win.jar" path-in-jar="/" />
       <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/com/fazecast/jSerialComm/2.10.4/jSerialComm-2.10.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/core/8.0.7/core-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/datafx/8.0.7/datafx-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/io/datafx/flow/8.0.7/flow-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Users/WillowKoishi/.m2/repository/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

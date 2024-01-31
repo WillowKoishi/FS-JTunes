@@ -18,6 +18,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import java.io.IOException;
+import org.kordamp.ikonli.javafx.FontIcon;
 import java.sql.Date;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -35,7 +36,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException, FlowException {
-
 
         Flow flow = new Flow(MainController.class);
 
@@ -56,7 +56,6 @@ public class Main extends Application {
 
 
         stage.setTitle("FS JTunes");
-
         double width = 600;
         double height = 400;
         try {

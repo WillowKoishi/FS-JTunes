@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXRippler?>
 <?import com.jfoenix.controls.JFXToggleButton?>
@@ -18,20 +19,24 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
-<?import org.kordamp.ikonli.javafx.FontIcon?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <JFXToolbar prefHeight="-Infinity" prefWidth="45.0" style="-fx-background-color: #73dfff;" BorderPane.alignment="BOTTOM_LEFT">
          <bottom>
-            <StackPane alignment="CENTER">
-            <JFXButton prefHeight="45.0" prefWidth="45.0" text="" textFill="#1e223a">
+            <StackPane alignment="CENTER" prefWidth="45.0" prefHeight="45.0">
+            <JFXButton prefHeight="40.0" prefWidth="40.0" >
                <VBox.margin>
-                  <Insets left="2.5" right="2.5" top="2.5" />
+                  <Insets left="2.5" right="2.5" top="2.5" bottom="2.5"/>
                </VBox.margin>
-
+               <graphic>
+               <ImageView fitHeight="30" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                  <Image url="/assets/img/ic_usb_black_48dp.png"/>
+               </ImageView>
+               </graphic>
             </JFXButton>
-            <FontIcon iconLiteral="fas-cog" iconSize="20" styleClass="icon" />
             </StackPane>
          </bottom>
          <top>
@@ -57,14 +62,24 @@
                      <toggleGroup>
                         <ToggleGroup fx:id="toggleGroup" />
                      </toggleGroup>
-                     <FontIcon iconLiteral="fas-cash-register" iconSize="20" styleClass="icon" />
+                     <ImageView fitHeight="30" fitWidth="25" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="/assets/img/ic_usb_black_48dp.png" />
+                        </image>
+                     </ImageView>
+
                   </JFXToggleNode>
                   <JFXToggleNode prefHeight="40.0" prefWidth="40.0" selected="false" text="" textFill="#1e223a" toggleGroup="$toggleGroup">
 
                      <VBox.margin>
                         <Insets left="2.5" right="2.5" top="2.5" />
                      </VBox.margin>
-                     <FontIcon iconLiteral="fas-database" iconSize="20" styleClass="icon" />
+                     <ImageView fitHeight="30" fitWidth="25" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="/assets/img/ic_usb_black_48dp.png" />
+                        </image>
+                     </ImageView>
+
 
 
                   </JFXToggleNode>
@@ -73,7 +88,24 @@
                      <VBox.margin>
                         <Insets left="2.5" right="2.5" top="2.5" />
                      </VBox.margin>
-                     <FontIcon iconLiteral="fas-briefcase" iconSize="20" styleClass="icon" />
+                     <ImageView fitHeight="30" fitWidth="25" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="/assets/img/ic_usb_black_48dp.png" />
+                        </image>
+                     </ImageView>
+
+                  </JFXToggleNode>
+                  <JFXToggleNode prefHeight="40.0" prefWidth="40.0" selected="false" text="" textFill="#1e223a">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup1" />
+                     </toggleGroup>
+                     <VBox.margin>
+                        <Insets left="2.5" right="2.5" top="2.5" />
+                     </VBox.margin>
+                     <ImageView fitHeight="30" fitWidth="25" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/assets/img/ic_usb_black_48dp.png"/>
+                     </ImageView>
+
                   </JFXToggleNode>
 
                </children>
@@ -98,6 +130,22 @@
 
 
             <Label fx:id="label1" layoutX="149.0" layoutY="98.0" prefHeight="58.0" prefWidth="161.0" text="Label" />
+            <JFXListView layoutX="369.0" layoutY="36.0" prefHeight="343.0" prefWidth="191.0">
+               <Label fx:id="button">你说得对</Label>
+               <Label fx:id="checkbox">但是</Label>
+               <Label fx:id="combobox">JTunes</Label>
+               <Label fx:id="dialogs">是一款由</Label>
+               <Label fx:id="icons">整流罩工作室</Label>
+               <Label fx:id="scrollpane">自主研发的</Label>
+               <Label fx:id="listview">一款</Label>
+               <Label fx:id="treetableview">全新开放编程语言</Label>
+               <Label fx:id="progressbar">串口管理器</Label>
+               <Label fx:id="radiobutton">Radio Button</Label>
+               <Label fx:id="slider">Slider</Label>
+               <Label fx:id="spinner">Spinner</Label>
+               <Label fx:id="textfield">Text Field</Label>
+               <Label fx:id="highlighter">Highlighter</Label>
+            </JFXListView>
          </children>
       </AnchorPane>
    </center>
