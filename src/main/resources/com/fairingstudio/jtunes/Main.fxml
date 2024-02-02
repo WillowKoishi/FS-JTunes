@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXCheckBox?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXHamburger?>
-<?import com.jfoenix.controls.JFXListView?>
-<?import com.jfoenix.controls.JFXRadioButton?>
-<?import com.jfoenix.controls.JFXRippler?>
-<?import com.jfoenix.controls.JFXToggleButton?>
-<?import com.jfoenix.controls.JFXToggleNode?>
-<?import com.jfoenix.controls.JFXToolbar?>
 <?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -22,9 +13,10 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<?import java.lang.String?>
+<BorderPane fx:id="main_pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <JFXToolbar prefHeight="-Infinity" prefWidth="45.0" style="-fx-background-color: #73dfff;" BorderPane.alignment="BOTTOM_LEFT">
+      <JFXToolbar fx:id="burgerTooltip" prefHeight="-Infinity" prefWidth="45.0" style="-fx-background-color: #73dfff;" BorderPane.alignment="BOTTOM_LEFT">
          <bottom>
             <StackPane alignment="CENTER" prefWidth="45.0" prefHeight="45.0">
             <JFXButton prefHeight="40.0" prefWidth="40.0" >
@@ -33,7 +25,7 @@
                </VBox.margin>
                <graphic>
                <ImageView fitHeight="30" fitWidth="20" pickOnBounds="true" preserveRatio="true">
-                  <Image url="/assets/img/ic_usb_black_48dp.png"/>
+                  <Image url="/assets/img/ic_settings_black_48dp.png"/>
                </ImageView>
                </graphic>
             </JFXButton>
@@ -114,39 +106,6 @@
       </JFXToolbar>
    </left>
    <center>
-      <AnchorPane prefHeight="415.0" prefWidth="619.0" BorderPane.alignment="CENTER">
-         <children>
-            <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="180.0" prefHeight="49.0" prefWidth="114.0" text="3123" />
-            <JFXCheckBox layoutX="240.0" layoutY="40.0" />
-            <JFXRadioButton layoutX="241.0" layoutY="71.0">
-               <selectedColor>
-                  <Color red="0.23529411852359772" green="0.572549045085907" blue="0.9098039269447327" />
-               </selectedColor></JFXRadioButton>
-            <JFXToggleButton layoutX="74.0" layoutY="314.0" />
-            <JFXToggleButton layoutX="74.0" layoutY="256.0" />
-            <JFXToggleNode layoutX="93.0" layoutY="172.0" prefHeight="49.0" prefWidth="130.0" text="原神" />
-            <JFXComboBox layoutX="253.0" layoutY="115.0" />
-
-
-
-            <Label fx:id="label1" layoutX="149.0" layoutY="98.0" prefHeight="58.0" prefWidth="161.0" text="Label" />
-            <JFXListView layoutX="369.0" layoutY="36.0" prefHeight="343.0" prefWidth="191.0">
-               <Label fx:id="button">你说得对</Label>
-               <Label fx:id="checkbox">但是</Label>
-               <Label fx:id="combobox">JTunes</Label>
-               <Label fx:id="dialogs">是一款由</Label>
-               <Label fx:id="icons">整流罩工作室</Label>
-               <Label fx:id="scrollpane">自主研发的</Label>
-               <Label fx:id="listview">一款</Label>
-               <Label fx:id="treetableview">全新开放编程语言</Label>
-               <Label fx:id="progressbar">串口管理器</Label>
-               <Label fx:id="radiobutton">Radio Button</Label>
-               <Label fx:id="slider">Slider</Label>
-               <Label fx:id="spinner">Spinner</Label>
-               <Label fx:id="textfield">Text Field</Label>
-               <Label fx:id="highlighter">Highlighter</Label>
-            </JFXListView>
-         </children>
-      </AnchorPane>
+      <fx:include source="SerialCom.fxml"/>
    </center>
 </BorderPane>

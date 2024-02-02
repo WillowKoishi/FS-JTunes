@@ -51,8 +51,8 @@ public class Main extends Application {
 
 
         decorator.setGraphic(new SVGGlyph(""));
-        stage.setMinWidth(600);
-        stage.setMinHeight(400);
+        stage.setMinWidth(700);
+        stage.setMinHeight(500);
 
 
         stage.setTitle("FS JTunes");
@@ -62,7 +62,9 @@ public class Main extends Application {
             Rectangle2D bounds = Screen.getScreens().get(0).getBounds();
             width = bounds.getWidth() / 2;
             height = bounds.getHeight() / 2;
-        }catch (Exception e){ }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
         Scene scene = new Scene(decorator, width, height);
         scene.setFill(Color.TRANSPARENT);
@@ -82,7 +84,6 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-
         launch();
     }
 

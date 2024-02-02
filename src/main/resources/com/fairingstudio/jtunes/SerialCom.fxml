@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="outerstack" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fairingstudio.jtunes.SerialComController">
+   <HBox fx:id="serials" focusTraversable="true" prefHeight="400.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+         <VBox alignment="CENTER" prefHeight="389.0" prefWidth="178.0" style="-fx-background-radius: 5px; -fx-background-color: #00000009;">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="2.5" top="5.0" />
+            </VBox.margin>
+            <children>
+               <JFXButton text="连接" VBox.vgrow="ALWAYS">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" />
+                  </VBox.margin></JFXButton>
+               <JFXButton text="断开" VBox.vgrow="ALWAYS">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" />
+                  </VBox.margin></JFXButton>
+            </children>
+            <HBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+         </VBox>
+         <VBox alignment="CENTER" style="-fx-background-radius: 5px; -fx-background-color: #00000009;" HBox.hgrow="ALWAYS">
+            <VBox.margin>
+               <Insets bottom="5.0" left="2.5" right="5.0" top="5.0" />
+            </VBox.margin>
+            <HBox.margin>
+               <Insets bottom="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+            <children>
+               <VBox maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+                  <children>
+                     <HBox prefHeight="58.0" prefWidth="211.0">
+                        <children>
+                           <JFXButton fx:id="clear_log" text="清除" />
+                           <JFXButton />
+                           <JFXComboBox />
+                        </children>
+                     </HBox>
+                     <JFXListView fx:id="serial_logs_listview" maxWidth="1.7976931348623157E308" style="-fx-background-radius: 5px;" VBox.vgrow="ALWAYS">
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <Label>2024.2.1 Igbsgfjkbsgfkjzsdgfjgbsdjfysjgfkgfsgbfjysgbfbbgsjybgjyfkjzdgfkjuzsdflkuzsfb</Label>
+                        <Label>2024.2.2 fzs fdzsdvfzsfvszefvertaw4tcsergnfxdgbxdrgvdxfgscb</Label>
+                        <Label>2024.2.3 awetvertnbse5yw45yvsrtyhgndfgrsdxgvvse5tvse</Label>
+                        <Label>2024.2.4 wetvfrevzsfczsdfczsdfczsdcfzszdczsdcfzsd</Label>
+                        <Label>2024.2.5 awetrvertvszdrfczsdfvzszzbtsetybsegnryumrrhdnr</Label>
+                        <Label>2024.2.6 aevtzsdrctszdtvrtynmtyum68iokyguintdhdxvgzwsec</Label>
+                        <Label>2024.2.7 awcerterbtenuty,my8oifnudrvawerca4wtf3a4rcvw</Label>
+                        <Label>2024.2.8 acwerwvezsvrzsvrzsevrwetbrtumdtyu6ki7t6,kjfthvsefawdasfvawvr</Label>
+                        <Label>2024.2.9 aewcrwebrtyntuiu,ph,yigunbdrtgvsefacfecsdfwZASca</Label>
+                        <Label>2024.2.10 aewcrertbyumuol;.ijktf7undrytvsecfvefvszfvzsefvwtb4vtawvtavtawtvsetbeynnb</Label>
+                        <Label>2024.2.11 erbtestynrstbsetbetn4syni6,7m8irgsertvtvertbasetgb46rym5dyn4synb</Label>
+                        <Label>2024.2.1 Igbsgfjkbsgfkjzsdgfjgbsdjfysjgfkgfsgbfjysgbfbbgsjybgjyfkjzdgfkjuzsdflkuzsfb</Label>
+                        <Label>2024.2.2 fzs fdzsdvfzsfvszefvertaw4tcsergnfxdgbxdrgvdxfgscb</Label>
+                        <Label>2024.2.3 awetvertnbse5yw45yvsrtyhgndfgrsdxgvvse5tvse</Label>
+                        <Label>2024.2.4 wetvfrevzsfczsdfczsdfczsdcfzszdczsdcfzsd</Label>
+                        <Label>2024.2.5 awetrvertvszdrfczsdfvzszzbtsetybsegnryumrrhdnr</Label>
+                        <Label>2024.2.6 aevtzsdrctszdtvrtynmtyum68iokyguintdhdxvgzwsec</Label>
+                        <Label>2024.2.7 awcerterbtenuty,my8oifnudrvawerca4wtf3a4rcvw</Label>
+                        <Label>2024.2.8 acwerwvezsvrzsvrzsevrwetbrtumdtyu6ki7t6,kjfthvsefawdasfvawvr</Label>
+                        <Label>2024.2.9 aewcrwebrtyntuiu,ph,yigunbdrtgvsefacfecsdfwZASca</Label>
+                        <Label>2024.2.10 aewcrertbyumuol;.ijktf7undrytvsecfvefvszfvzsefvwtb4vtawvtavtawtvsetbeynnb</Label>
+                        <Label>2024.2.11 erbtestynrstbsetbetn4syni6,7m8irgsertvtvertbasetgb46rym5dyn4synb</Label>
+
+                     </JFXListView>
+                     <HBox alignment="CENTER" focusTraversable="true" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" VBox.vgrow="ALWAYS">
+                        <children>
+                           <JFXTextArea focusColor="#4d7fdb" maxHeight="30.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="179.0" HBox.hgrow="ALWAYS">
+                              <HBox.margin>
+                                 <Insets right="5.0" />
+                              </HBox.margin>
+                           </JFXTextArea>
+                           <JFXButton prefHeight="23.0" prefWidth="105.0" ripplerFill="WHITE" text="发送" />
+                        </children>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <ImageView fitWidth="300.0" mouseTransparent="true" opacity="0.67" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+      <image>
+         <Image url="@../../../assets/img/bg.png" />
+      </image>
+      <StackPane.margin>
+         <Insets />
+      </StackPane.margin>
+      <viewport>
+         <Rectangle2D />
+      </viewport>
+   </ImageView>
+</StackPane>
